@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Proposal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="background"></div>
+    <div id="container">
+        <div id="name-input">
+            <h1>Welcome, my dear!</h1>
+            <p>Please enter your name and upload an image:</p>
+            <input type="text" id="crush-name" placeholder="Your Name">
+            <input type="file" id="image-upload" accept="image/*">
+            <button onclick="startProposal()">Start</button>
+        </div>
+
+        <div id="cards-container" style="display: none;">
+            <p id="click-instruction">Click on each card to reveal its content and move to the next one.</p>
+        </div>
+        
+
+        <div id="proposal" style="display: none;">
+            <h2>My Dearest <span id="proposal-name"></span>,</h2>
+            <p class="poem">
+                तेरी आँखों की गहराई में,<br>
+                मैं अपना जहान देखता हूँ।<br>
+                तेरी मुस्कान की शीरीनी में,<br>
+                अपनी ख़ुशी का सामान देखता हूँ।<br>
+                <br>
+                तेरे साथ हर पल है ख़ास,<br>
+                तुझसे दूर रहना है मुश्किल।<br>
+                क्या तुम बनोगी मेरी ज़िंदगी का हिस्सा,<br>
+                और करोगी मेरे दिल को क़ुबूल?
+            </p>
+            <div class="buttons">
+                <button onclick="acceptProposal()">Yes</button>
+                <button id="no-button" onmouseover="moveButton()">No</button>
+            </div>
+        </div>
+
+        <div id="final-message" style="display: none;">
+            <h1>I Love You, <span id="final-name"></span>!</h1>
+        </div>
+    </div>
+
+    <div id="final-image-page" style="display: none;">
+        <div id="ring-container">
+            <div id="ring-glow"></div>
+            <div id="ring">
+                <img id="final-image" alt="Your Image">
+            </div>
+        </div>
+        <div class="floating-text" id="floating-text-1">I Love You!!</div>
+        <div class="floating-text" id="floating-text-2">I Love You!!</div>
+        <div class="floating-text" id="floating-text-3">I Love You!!</div>
+        <div class="floating-text" id="floating-text-4">I Love You!!</div>
+        <div class="floating-text" id="floating-text-5">I Love You!!</div>
+        <div class="floating-text" id="floating-text-6">I Love You!!</div>
+        <div class="floating-text" id="floating-text-7">I Love You!!</div>
+        <div class="floating-text" id="floating-text-8">I Love You!!</div>
+        <div class="floating-text" id="floating-text-9">I Love You!!</div>
+        <div class="floating-text" id="floating-text-10">I Love You!!</div>
+        <div class="floating-text" id="floating-text-11">I Love You!!</div>
+        <div class="floating-text" id="floating-text-12">I Love You!!</div>
+        <div class="floating-text" id="floating-text-13">I Love You!!</div>
+        <div class="floating-text" id="floating-text-14">I Love You!!</div>
+        <div id="small-hearts-container"></div>
+    </div>
+    <audio id="background-music" loop>
+        <source src="./Pehla_Pyaar_-_Kabir_Singh_320_Kbps.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
